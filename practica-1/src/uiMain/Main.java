@@ -3,10 +3,9 @@ import gestorAplicacion.paquete1.*;
 import gestorAplicacion.paquete2.*;
 import baseDatos.Serializador;
 import java.util.*;
-
 /**
- * Clase Main encargada de la capa asociada a la interfaz del usuario y de implementar
- * las funcionalidades del proyecto.
+Paulina Gomez  Hincapie
+Daniel Hincapie Cardona
  */
 
 public class Main {
@@ -14,10 +13,6 @@ public class Main {
 	static Sistema sistema = new Sistema();
     static int numeroMultas = 0;  // Atributo estático para el número de multas
     
-    //Agregar multa y prestamos de prueba
-    //static { sistema.getUser().getMultas().add(new Multa("Regresar tarde", new Date(12,12,2023), sistema.getUser())); } 
-    //static { sistema.getUser().getPrestamos().add(new Prestamo(sistema.getUser(), Prestamo.Tipo.PARTICULAR,new Date(), new Date(12,12,2023),sistema.getBibliotecas().get(0).getCopias().get(0),sistema.getBibliotecas().get(0))); } 
-   
     
 	public static void main(String[] args) {
 		byte opcion;
@@ -26,32 +21,53 @@ public class Main {
 		
 		while (enSesion == false) {
 			
-			System.out.println("Bienvenido al sistema de biliotecas de nuestra institución");
-			System.out.println("----------------------------------------------------------");
-			System.out.println("Por favor, seleccione una opción: ");
-			System.out.println("1. Ingresar como Administrador");
-			System.out.println("----------------------------------------------------------");
-			System.out.println("Por favor, seleccione la opción que desee ");
-			opcion = sc.nextByte(); 
+	        System.out.println("   ***********************************************");
+	        System.out.println("  *                                               *");
+	        System.out.println(" *                📚Aquí se Lee o se Llora 📚       *");
+	        System.out.println("*                                                    *");
+	        System.out.println("****************************************************** \n");
+	        System.out.println("                ┌─────────────────────┐");
+	        System.out.println("                │        LIBRO        │");
+	        System.out.println("                │                     │");
+	        System.out.println("                │  \"Un libro abierto  │");
+	        System.out.println("                │   es un cerebro     │");
+	        System.out.println("                │   que habla.\"       │");
+	        System.out.println("                │                     │");
+	        System.out.println("                │                     │");
+	        System.out.println("                │                     │");
+	        System.out.println("                └─────────────────────┘ \n ");
+	        
+			System.out.println("Por favor, seleccione una opción: \n");
+			System.out.println("---------------------------------------------------------- \n");
+			System.out.println("1. Igrese al sistema: \n");
+			
+			System.out.println("---------------------------------------------------------- \n");
+			System.out.println("Ingrese 1 para continuar \n");
+			
+			opcion = sc.nextByte();
+			sc.nextLine();
+			
+			
 			switch(opcion) {
 			case 1:
 				enSesion = true;
-				System.out.println("Sesion iniciada correctamente");
+				System.out.println( "\n");
+				System.out.println("Sesion iniciada correctamente \n");
 				break;
 			default: 
-				System.out.println("Por favor, seleccione una opcion correcta");
+				System.out.println("Por favor, seleccione una opcion correcta \n");
 			}
 		}	
 		
 		do {
-			System.out.println("Por favor seleccione la opcion que desee");
-			System.out.println("----------------------------------------------------------");
-			System.out.println("1. Consulta de disponibilidad para prestamo");
-			System.out.println("2. Consulta de disponibilidad para reserva de evento");
-			System.out.println("3. Gestion de base de datos");
-			System.out.println("4. Gestion de prestamos y reservas");
-			System.out.println("5. Gestión de Multas");
-			System.out.println("6. Salir del sistema");
+			System.out.println("Seleccione la opción que desea ejecutar \n");
+			System.out.println("---------------------------------------------------------- \n");
+			System.out.println("1. Consulta de disponibilidad para prestamo \n ");
+			System.out.println("2. Consulta de disponibilidad para reserva de evento \n");
+			System.out.println("3. Gestion de base de datos \n");
+			System.out.println("4. Gestion de prestamos y reservas \n");
+			System.out.println("5. Gestión de Multas \n");
+			System.out.println("6. Salir del sistema \n");
 			System.out.println("----------------------------------------------------------");
 			op = sc.nextByte();
 			
@@ -80,4 +96,3 @@ public class Main {
 		}
 		while (op != 6);
 	}
-	
