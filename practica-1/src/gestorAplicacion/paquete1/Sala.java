@@ -33,3 +33,4 @@ public class Sala implements Serializable{
 	public String toString() {
 		return nombre;
 	}
+}

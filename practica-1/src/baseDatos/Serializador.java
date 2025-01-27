@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 
 /**
 Paulina Gomez  Hincapie 
+Daniel Hincapie Cardona
  */
 
 
