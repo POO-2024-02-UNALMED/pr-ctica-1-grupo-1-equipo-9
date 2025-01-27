@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import gestorAplicacion.paquete1.Libro;
 import java.io.Serializable;
 
-
 /**
-Paulina Gomez  Hincapie 
+Juan Leonardo Medina Reyes
  */
 
 public class Autor implements Serializable{

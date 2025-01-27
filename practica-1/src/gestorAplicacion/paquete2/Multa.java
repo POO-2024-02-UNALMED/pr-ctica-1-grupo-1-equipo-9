@@ -4,7 +4,7 @@ import java.util.Date;
 import java.io.Serializable;
 
 /**
-Paulina Gomez  Hincapie 
+Juan Leonardo Medina Reyes
  */
 
 

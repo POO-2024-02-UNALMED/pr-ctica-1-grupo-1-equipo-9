@@ -7,6 +7,9 @@ import baseDatos.*;
 import java.util.ArrayList;
 import java.io.Serializable;
 
+/**
+Juan Leonardo Medina Reyes
+ */
 
 public class Sistema implements Serializable {
 	private static final long serialVersionUID = 1L;

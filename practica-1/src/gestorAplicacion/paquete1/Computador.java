@@ -3,6 +3,10 @@ package gestorAplicacion.paquete1;
 import java.util.ArrayList;
 import java.io.Serializable;
 
+/**
+Valentina Sierra Durango
+ */
+
 public class Computador extends Recurso implements Serializable{
 	private static final long serialVersionUID = 1L;
 	static private int totalPCs;

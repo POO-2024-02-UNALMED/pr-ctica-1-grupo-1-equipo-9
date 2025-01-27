@@ -1,9 +1,12 @@
 package gestorAplicacion.paquete1;
-import gestorAplicacion.paquete2.Autor;
 
+import gestorAplicacion.paquete2.Autor;
 import java.util.ArrayList;
 import java.io.Serializable;
 
+/**
+Valentina Sierra Durango
+ */
 
 public class Libro extends Recurso implements Serializable {
 	private static final long serialVersionUID = 1L;

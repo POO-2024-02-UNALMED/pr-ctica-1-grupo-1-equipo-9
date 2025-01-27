@@ -1,5 +1,10 @@
 package gestorAplicacion.paquete1;
+
 import java.io.Serializable;
+
+/**
+Alejandro Avendano Serna
+ */
 
 public class PC extends Computador implements Serializable, Prestable{
 	private static final long serialVersionUID = 1L;

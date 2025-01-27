@@ -1,7 +1,10 @@
 package gestorAplicacion.paquete1;
+
 import java.io.Serializable;
 
-
+/**
+Valentina Sierra Durango
+ */
 
 public class Copia extends Libro implements Serializable, Prestable{
 	private static final long serialVersionUID = 1L;

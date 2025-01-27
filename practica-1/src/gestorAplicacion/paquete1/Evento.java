@@ -1,6 +1,11 @@
 package gestorAplicacion.paquete1;
+
 import java.util.*;
 import java.io.Serializable;
+
+/**
+Valentina Sierra Durango
+ */
 
 public class Evento implements Serializable{
 	private static final long serialVersionUID = 1L;

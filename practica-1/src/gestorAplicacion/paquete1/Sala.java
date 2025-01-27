@@ -1,5 +1,10 @@
 package gestorAplicacion.paquete1;
+
 import java.io.Serializable;
+
+/**
+Juan Leonardo Medina Reyes
+ */
 
 public class Sala implements Serializable{
 	private static final long serialVersionUID = 1L;

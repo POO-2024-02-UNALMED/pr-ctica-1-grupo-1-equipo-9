@@ -1,8 +1,10 @@
 package uiMain;
+
 import gestorAplicacion.paquete1.*;
 import gestorAplicacion.paquete2.*;
 import baseDatos.Serializador;
 import java.util.*;
+
 /**
 Paulina Gomez  Hincapie
 Daniel Hincapie Cardona

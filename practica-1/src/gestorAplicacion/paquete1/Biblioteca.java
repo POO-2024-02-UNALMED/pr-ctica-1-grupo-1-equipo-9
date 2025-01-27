@@ -1,4 +1,5 @@
 package gestorAplicacion.paquete1;
+
 import gestorAplicacion.paquete2.*;
 import static java.util.Comparator.comparingInt;
 import static java.util.Comparator.comparing;
@@ -8,6 +9,9 @@ import java.util.*;
 import java.util.ArrayList;
 import java.io.Serializable;
 
+/**
+Alejandro Avendano Serna
+ */
 
 public class Biblioteca implements Serializable{
 	private static final long serialVersionUID = 1L;
