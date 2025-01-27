@@ -1,7 +1,5 @@
 package baseDatos;
 
-//Comprobar!! - DHC
-
 import gestorAplicacion.paquete1.*; 
 import gestorAplicacion.paquete2.*;
 import java.util.ArrayList;
@@ -11,6 +9,12 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
+
+/**
+*
+Paulina Gomez Hincapie 
+Daniel Hincapie Cardona
+ */
 
 public class Deserializador {
 	
