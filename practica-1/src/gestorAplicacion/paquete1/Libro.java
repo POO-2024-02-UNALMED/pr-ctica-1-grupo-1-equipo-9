@@ -29,6 +29,11 @@ public class Libro extends Recurso implements Serializable {
     	this("Libro sin nombre", 0, "",new Autor(),0);
     }
     
+    //Override para metodo abstracto
+    @Override
+    public String getDescripcion() {
+        return "Libro: " + getNombre() + ", Autor: " + autor; 
+    }
 
     // Métodos para obtener el ISBN del libro
     public String getIsbn() {

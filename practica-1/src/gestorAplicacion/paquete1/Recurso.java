@@ -11,6 +11,7 @@ public abstract class Recurso implements Serializable{
 	private static final long serialVersionUID = 1L;
     private String nombre;
     private int idRecurso;
+    public abstract String getDescripcion();
 
     // Constructor de la clase Recurso
     public Recurso(String nombre, int idRecurso) {

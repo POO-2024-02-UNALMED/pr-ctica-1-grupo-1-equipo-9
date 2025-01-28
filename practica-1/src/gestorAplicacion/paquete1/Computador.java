@@ -26,6 +26,12 @@ public class Computador extends Recurso implements Serializable{
     	this("Sin referencia", 0, "Sin marca", "Sin gama");
     }
 
+    //Override para metodo abstracto
+    @Override
+    public String getDescripcion() {
+        return "PC: " + getNombre() + ", Marca: " + getMarca(); 
+    }
+
     // Métodos para obtener y establecer la marca del computador
     public String getMarca() {
         return marca;
@@ -56,5 +62,3 @@ public class Computador extends Recurso implements Serializable{
     	return this.getNombre();
     }
 }
-
-
