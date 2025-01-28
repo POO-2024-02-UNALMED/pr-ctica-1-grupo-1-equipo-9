@@ -5,9 +5,8 @@ import java.util.ArrayList;
 import java.io.Serializable;
 
 /**
-Paulina Gomez  Hincapie 
+Valentina Sierra Durango
  */
-
 
 public class Prestamo implements Serializable{
 	private static final long serialVersionUID = 1L;

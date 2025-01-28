@@ -7,7 +7,6 @@ import java.io.Serializable;
 Juan Leonardo Medina Reyes
  */
 
-
 public class Multa implements Serializable{
 	private static final long serialVersionUID = 1L;
     private int idMulta; // Identificador único de la multa

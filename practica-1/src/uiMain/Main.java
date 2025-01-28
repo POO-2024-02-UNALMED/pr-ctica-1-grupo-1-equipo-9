@@ -304,6 +304,7 @@ private static void AgregarOEliminar() {
 	Autor autor;
 	System.out.println("Seleccione la acción que desee realizar: \n0. Agregar libro\n1. Remover libro\n2. Agregar computador\n3. Remover computador");
 	op = sc.nextByte();
+	sc.nextLine();
 	switch(op) {
 	
 	
