@@ -27,7 +27,7 @@ public class Prestamo implements Serializable{
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.sala = sala;
-        // Generar un identificador único para el préstamo (puedes implementar esta lógica)
+        // Generar un identificador único para el préstamo
         this.idPrestamo = generarIdentificadorUnico();
         copiasPrestadas = new ArrayList<Copia>();
         copiasPrestadas.add(copia);
@@ -41,7 +41,7 @@ public class Prestamo implements Serializable{
         this.fechaFin = fechaFin;
         this.sala = sala;
         this.sede = sede;
-        // Generar un identificador único para el préstamo (puedes implementar esta lógica)
+        // Generar un identificador único para el préstamo
         this.idPrestamo = generarIdentificadorUnico();
         pcsPrestados = new ArrayList<PC>();
         pcsPrestados.add(pc);
@@ -56,7 +56,7 @@ public class Prestamo implements Serializable{
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.sede = sede;
-        // Generar un identificador único para el préstamo (puedes implementar esta lógica)
+        // Generar un identificador único para el préstamo
         this.idPrestamo = generarIdentificadorUnico();
         copiasPrestadas = new ArrayList<Copia>();
         copiasPrestadas.add(copia);
@@ -70,7 +70,7 @@ public class Prestamo implements Serializable{
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.sede = sede;
-        // Generar un identificador único para el préstamo (puedes implementar esta lógica)
+        // Generar un identificador único para el préstamo
         this.idPrestamo = generarIdentificadorUnico();
         pcsPrestados = new ArrayList<PC>();
         pcsPrestados.add(pc);
@@ -136,14 +136,14 @@ public class Prestamo implements Serializable{
 
     // Método para finalizar el préstamo
     public void finalizarPrestamo() {
-        // Lógica para finalizar el préstamo (puedes implementar esta lógica)
+        // Lógica para finalizar el préstamo
         // Esto podría incluir la actualización de la disponibilidad de las copias y las PCs prestadas
     }
 
-    // Método para generar un identificador único para el préstamo (puedes implementar esta lógica)
+    // Método para generar un identificador único para el préstamo
     private int generarIdentificadorUnico() {
         // Implementa la lógica para generar identificadores únicos de préstamo
-        return 0; // Debes ajustar esto según tu implementación
+        return 0;
     }
     public void setFechaFin(Date fechaFin) {
 		this.fechaFin = fechaFin;

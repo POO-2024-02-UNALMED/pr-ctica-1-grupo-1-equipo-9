@@ -10,7 +10,6 @@ Paulina Gomez  Hincapie
 Daniel Hincapie Cardona
  */
 
- //DHC - Comentarios pendientes - 478 onwards
 public class Main {
 	static Scanner sc = new Scanner(System.in);
 	static Sistema sistema = new Sistema();
@@ -76,19 +75,19 @@ public class Main {
 			
 			switch(op) {
 			case 1:
-				pedirComputadorOLibro();
+				pedirComputadorOLibro(); //103
 				break;
 			case 2:
-				recursoEvento();
+				recursoEvento(); //477
 				break;
 			case 3:
-				AgregarOEliminar();
+				AgregarOEliminar(); //296
 				break;
 			case 4:
-				regresarPrestamo();
+				regresarPrestamo(); //547
 				break;
 			case 5:
-				gestionMultas();				
+				gestionMultas(); //661				
 				break;
 			case 6: 
 				salirDelSistema(sistema);
@@ -101,8 +100,8 @@ public class Main {
 	}
 	
 	/* PRIMERA FUNCIONALIDAD
-	 * 
-	 * permite buscar libros o computadoras disponibles en una sede de la biblioteca y gestionar un préstamo a nombre del usuario.
+	 * Permite buscar libros o computadoras disponibles en una sede de la biblioteca y gestionar
+	 * un préstamo a nombre del usuario.
 	 */
 	
 	private static void pedirComputadorOLibro() {
@@ -219,7 +218,7 @@ public class Main {
                 
                 boolean encontradopc = false;
                 boolean disponiblepc = false;
-                ArrayList<Biblioteca> sedes = new ArrayList<Biblioteca>(); // Move this line outside the loop
+                ArrayList<Biblioteca> sedes = new ArrayList<Biblioteca>();
                 for (Computador l : sistema.getComputadores()) { 
                     if (l.getNombre().equalsIgnoreCase(nombre)) {
                         encontradopc = true;
@@ -263,7 +262,7 @@ public class Main {
 	                	// Fecha hasta la cual se hace el prestamo.
 	                	
 	                	Calendar calendar = Calendar.getInstance();
-	                	calendar.set(2025, mes - 1, dia); // Note: Month value is 0-based in java.util.Calendar.
+	                	calendar.set(2025, mes - 1, dia); 
 	                	Date fecha = calendar.getTime();
 	                	
 	                	// Fecha actual.
@@ -297,6 +296,7 @@ public class Main {
 	 * Gestion base de datos:  encargado de agregar o eliminar recursos de la base de datos general y,
 	 *  posteriormente, actualizar las copias correspondientes en cada sede.
 	 */
+
 private static void AgregarOEliminar() {
 	String nombre;
 	Biblioteca sede;
@@ -471,17 +471,14 @@ private static void AgregarOEliminar() {
 		break;
 		
 	default :
-		System.out.println("Opcion incorrecta");
-		
+		System.out.println("Opcion incorrecta");	
 	}
-	
 }
-	
-	
-	/**
+	/* SEGUNDA FUNCIONALIDAD
 	 * Funcionalidad encargada de realizar reservas para un evento, reservando sala y prestando recursos para
 	 * su realizacion
 	 */
+
 	private static void recursoEvento() {
 		Byte op;
 		Byte op2 = 0;
@@ -544,13 +541,13 @@ private static void AgregarOEliminar() {
 			break;
 		default:
 			System.out.println("Material incorrecto");
-		}
-		
-		
-			
-		}
-		
-	// Método para devolver un préstamo específico
+		}		
+	}
+
+	/* CUARTA FUNCIONALIDAD
+	 * Funcionalidad encargada de gestionar prestamos y reservas del usuario
+	 */
+
 	private static void regresarPrestamo() {
 	    // Mostrar los préstamos vigentes para que el usuario elija cuál devolver
 		ArrayList<Prestamo> prestamosUsuario = sistema.getUser().getPrestamos();
@@ -658,11 +655,12 @@ private static void AgregarOEliminar() {
 	    	break;
 	    default:
 	    System.out.println("Opcion no valida");
-	    	
-	    	
 	    }
 	}
 
+	/* QUINTA FUNCIONALIDAD
+	 * Funcionalidad encargada de gestionar las multas que tiene el usuario
+	 */
 
 	// Método para calcular los días de retraso entre dos fechas
 	static private int calcularDiasDeRetraso(Date fechaActual, Date fechaVencimiento) {

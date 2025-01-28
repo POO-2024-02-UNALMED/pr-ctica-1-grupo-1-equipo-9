@@ -149,23 +149,6 @@ public class Biblioteca implements Serializable{
         }
         return estado; // No se encontraron copias disponibles para el propósito específico
     }
-
-
-	
-	// Método para encontrar el estado de una copia por su ID
-	//public String encontrar(int idCopia) {
-        //for (Prestamo prestamo : prestamos) {
-            // Verificar si la copia está en préstamo
-            //for (Copia copia : prestamo.getCopiasPrestadas()) {
-                //if (copia.getIdCopia() == idCopia) {
-                    //return "A préstamo";
-                //}
-            //}
-       //}
-
-        // Si no se encontró en los préstamos, se asume que está en la biblioteca
-        //return "En biblioteca";
-    //}
 	
 	public Copia hallarcopiaPorNombre(String nombre) {
 		for (Copia c : copias) {
