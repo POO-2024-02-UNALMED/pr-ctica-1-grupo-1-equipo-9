@@ -641,7 +641,7 @@ private static void AgregarOEliminar() {
             	int mes = sc.nextInt();
             	// Fecha hasta la cual se extiende el prestamo
             	Calendar calendar = Calendar.getInstance();
-            	calendar.set(2025 mes - 1, dia); 
+            	calendar.set(2025, mes - 1, dia); 
             	Date fecha = calendar.getTime();
 	    		prestamoSeleccionado.setFechaFin(fecha);
 	    		System.out.println("Prestamo extendido con exito ");
